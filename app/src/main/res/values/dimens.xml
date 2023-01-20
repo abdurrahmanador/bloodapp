@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_primary">15dp</dimen>
+    <dimen name="text_size_primary">16sp</dimen>
+    <dimen name="text_size_big">24sp</dimen>
+    <dimen name="button_radious">10dp</dimen>
+    <dimen name="button_size">45dp</dimen>
+    <dimen name="padding_double">32dp</dimen>
+    <dimen name="buttonSize">15dp</dimen>
+</resources>

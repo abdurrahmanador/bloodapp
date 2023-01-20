@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/bldhme"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_login"
+        android:icon="@drawable/password"
+        android:title="Login" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logggout"
+        android:title="Logout" />
+
+<item android:title="communicate">
+    <menu>
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/sharing"
+            android:title="Share" />
+
+
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/coding"
+        android:title="Developer" />
+    </menu>
+</item>
+</menu>

@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Blood</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="about">Assalamualikum, I am Abdur Rahman, Developer of this app.
+        Currently I am pursuing BSc. degree from International Islamic University Chittagong ,
+        from the dept. of Computer Science and Engineering.
+    </string>
+    <string name="add">Add Post</string>
+    <string name="info">https://www.facebook.com/arador.arador
+
+        Cell: +8801682474757
+    </string>
+    <string name="search">Search</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
+    <string name="homeMenu">Home</string>
+    <string name="message">Message</string>
+    <string name="searchMenu">Search</string>
+    <string name="more">More</string>
+    <string name="profileMenu">Profile</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="signup">Signup</string>
+    <string-array name="blood_group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+    <string-array name="yes_no">
+        <item>Yes</item>
+        <item>Unavailable</item>
+    </string-array>
+    <string-array name="blood_status">
+        <item>Donor Managed</item>
+        <item>Finding Blood Donor</item>
+    </string-array>
+    <string-array name="city_name">
+        <item>Chattogram</item>
+        <item>Dhaka</item>
+        <item>Sylhet</item>
+        <item>Kumilla</item>
+        <item>Jashore</item>
+        <item>Barishal</item>
+        <item>Rajshahi</item>
+    </string-array>
+    <string-array name="blood_need">
+        <item>1 Bag</item>
+        <item>2 Bag</item>
+        <item>3 Bag</item>
+        <item>4 Bag</item>
+        <item>5 Bag or More</item>
+    </string-array>
+
+    <string-array name="district_name">
+        <item>Dhaka</item>
+        <item>Faridpur</item>
+        <item>Gazipur</item>
+        <item>Gopalganj</item>
+        <item>Jamalpur</item>
+        <item>Kishoreganj</item>
+        <item>Madaripur</item>
+        <item>Manikganj</item>
+        <item>Munshiganj</item>
+        <item>Mymensingh</item>
+        <item>Narayanganj</item>
+        <item>Narsingdi</item>
+        <item>Netrokona</item>
+        <item>Rajbari</item>
+        <item>Shariatpur</item>
+        <item>Sherpur</item>
+        <item>Tangail</item>
+        <item>Bogura</item>
+        <item>Joypurhat</item>
+        <item>Naogaon</item>
+        <item>Natore</item>
+        <item>Nawabganj</item>
+        <item>Pabna</item>
+        <item>Rajshahi</item>
+        <item>Sirajgonj</item>
+        <item>Dinajpur</item>
+        <item>Gaibandha</item>
+        <item>Kurigram</item>
+        <item>Lalmonirhat</item>
+        <item>Nilphamari</item>
+        <item>Panchagarh</item>
+        <item>Rangpur</item>
+        <item>Thakurgaon</item>
+        <item>Barguna</item>
+        <item>Barishal</item>
+        <item>Bhola</item>
+        <item>Jhalokati</item>
+        <item>Patuakhali</item>
+        <item>Pirojpur</item>
+        <item>Bandarban</item>
+        <item>Brahmanbaria</item>
+        <item>Chandpur</item>
+        <item>Chattogram</item>
+        <item>Cumilla</item>
+        <item>Coxs Bazar</item>
+        <item>Feni</item>
+        <item>Khagrachari</item>
+        <item>Lakshmipur</item>
+        <item>Noakhali</item>
+        <item>Rangamati</item>
+        <item>Habiganj</item>
+        <item>Maulvibazar</item>
+        <item>Sunamganj</item>
+        <item>Sylhet</item>
+        <item>Bagerhat</item>
+        <item>Chuadanga</item>
+        <item>Jashore</item>
+        <item>Jhenaidah</item>
+        <item>Khulna</item>
+        <item>Kushtia</item>
+        <item>Magura</item>
+        <item>Meherpur</item>
+        <item>Narail</item>
+        <item>Satkhira</item>
+    </string-array>
+
+
+</resources>

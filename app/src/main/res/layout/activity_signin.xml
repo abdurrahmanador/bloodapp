@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/signinLayout"
+    android:background="@drawable/fsdd"
+    tools:context=".activities.SigninActivity">
+
+    <TextView
+        android:id="@+id/lgowor"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppinsreg"
+        android:gravity="center"
+        android:text="Blood"
+        android:textColor="@color/lgored"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lgo" />
+
+
+    <ImageView
+        android:id="@+id/lgo"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="160dp"
+        android:src="@drawable/lgo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:fontFamily="@font/poppinsreg"
+        android:gravity="center"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/fixedNumber"
+        android:layout_width="90dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/contactNumberLayout"
+        app:layout_constraintTop_toBottomOf="@id/login"
+        android:layout_height="60dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/cbth"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/fixedNumberET"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:enabled="false"
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_marginBottom="10dp"
+            android:text="+880"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:textSize="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contactNumberLayout"
+            android:layout_width="280dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login"
+            android:layout_height="60dp"
+          android:layout_marginTop="18dp"
+        android:background="@drawable/rectg"
+              android:gravity="center">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactNumberET"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:enabled="true"
+                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:hint=" Enter Your Number "
+                android:inputType="phone"
+                android:textSize="15sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ProgressBar
+        android:id="@+id/verficationProgressBar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling" />
+
+    <Button
+            android:id="@+id/verificationButton"
+            android:layout_width="90dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toBottomOf="@id/contactNumberLayout"
+            android:layout_height="40dp"
+            android:enabled="true"
+            android:fontFamily="@font/poppinsreg"
+            android:text="Verify"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_two"
+            android:textAllCaps="true"
+            />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/OTPLayout"
+        android:layout_width="330dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verificationButton"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rectg"
+        android:gravity="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/OTPET"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:enabled="true"
+            android:background="@color/white"
+            android:layout_margin="10dp"
+            android:hint=" Enter OTP Code "
+            android:inputType="number"
+            android:textSize="15dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/OTPButton"
+        android:layout_width="110dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/OTPLayout"
+        android:layout_height="40dp"
+        android:enabled="true"
+        android:fontFamily="@font/poppinsreg"
+        android:text="Submit OTP"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/button_two"
+        android:textAllCaps="true"
+        />
+    <TextView
+        android:id="@+id/resendTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Resend OTP"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginBottom="25dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/card_view"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="20dp"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginVertical="6dp"
+
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+
+                />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/boldandika"
+                android:layout_marginLeft="15dp"
+                android:text="Abdur Rahman" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="Blood Group: "
+                />
+
+             <TextView
+                 android:id="@+id/bGTextView"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="15sp"
+                 android:textColor="@color/black"
+                 android:fontFamily="@font/boldandika"
+                 android:textStyle="bold"
+                 android:layout_marginTop="5dp"
+                 android:layout_marginLeft="15dp"
+                 android:text="B+" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No.: "
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                />
+             <TextView
+                 android:id="@+id/phoneCallButton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="15sp"
+                 android:layout_marginTop="5dp"
+                 android:background="@drawable/ic_baseline_phone_24"/>
+             <TextView
+                 android:id="@+id/cNTextView"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="15sp"
+                 android:layout_marginTop="5dp"
+                 android:textStyle="bold"
+                 android:fontFamily="@font/boldandika"
+                 android:layout_marginLeft="05dp"
+                 android:text="01682474757"
+                 android:textColor="@color/black"
+                 />
+         </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address: "
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                />
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/boldandika"
+                android:layout_marginLeft="15dp"
+                android:text="Chittagong,Bangladesh"
+                android:textColor="@color/black"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available for Donation?: "
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                />
+            <TextView
+                android:id="@+id/availability"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Yes"
+                android:textColor="@color/black"
+                android:fontFamily="@font/boldandika"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="15dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="230dp">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dnrcrd"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:layout_marginTop="05dp"
+            android:layout_marginStart="42dp"
+            android:layout_width="80dp"
+            android:text="Tap\nFor call"
+            android:fontFamily="@font/andika_regular"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
