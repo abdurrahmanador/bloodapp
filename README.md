@@ -23,7 +23,6 @@ E-mail: abiabdullahinshaaloh@gmail.com
 
 Cell: +8801682474757
 
-{Currently Wishing to do Intern or Job If can get a good opportunity }
 --------------------------------------------------------------------
 ![Screenshot_2023-03-05-11-17-18-837_com example blood](https://user-images.githubusercontent.com/121200627/222943145-b901d66a-db8d-4d1a-90a4-9ca4e39c09e2.jpg)
 ![Screenshot_2023-03-05-11-17-21-085_com example blood](https://user-images.githubusercontent.com/121200627/222943148-1a68ea62-5dd0-405a-9ed7-5fcc5307b90c.jpg)
