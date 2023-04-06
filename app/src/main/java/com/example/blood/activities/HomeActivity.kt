@@ -1,5 +1,6 @@
 package com.example.blood.activities
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
@@ -7,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.blood.BuildConfig
 import com.example.blood.R
 import com.example.blood.databinding.ActivityHomeBinding
 import com.google.android.material.navigation.NavigationView
@@ -52,22 +54,32 @@ class HomeActivity : AppCompatActivity() {
 
                 }
                 R.id.nav_about ->
-                    startActivity(Intent(this,About::class.java))
+                    startActivity(Intent(this, About::class.java))
 
                 R.id.nav_share -> {
-                    val intent = Intent(Intent.ACTION_SEND)
-                    intent.type = "type/palin"
-                    val shareBody = "You are body"
-                    val shareSub = "You subject here"
-                    intent.putExtra(Intent.EXTRA_SUBJECT, shareBody)
-                    intent.putExtra(Intent.EXTRA_TEXT, shareSub)
-                    startActivity(Intent.createChooser(intent, "Share your App"))
+                    fun shareApp(context: Context){
+                        val appPackageName=BuildConfig.APPLICATION_ID
+                        val appName="Blood"
+                        val shareBodyText = "https://play.google.com/store/apps/details?id=$appPackageName"
+
+                        val sendIntent=Intent(Intent.ACTION_SEND).apply {
+                            type="text/plain"
+                            putExtra(Intent.EXTRA_TEXT,appName)
+                            putExtra(Intent.EXTRA_TEXT,shareBodyText)
+                        }
+                        sendIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                        context.startActivity(Intent.createChooser(sendIntent,null))
+
+                    }
+
                 }
             }
             true
         }
 
-
+        binding.profileName.setOnClickListener {
+            startActivity(Intent(this,ActivityProfile::class.java))
+        }
         binding.becomeDonorHome.setOnClickListener {
             val intent = Intent(this, ActivityDonor::class.java)
             startActivity(intent)
@@ -76,10 +88,10 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, NewsfeedActivity::class.java)
             startActivity(intent)
         }
-        binding.needAmbulanceHome.setOnClickListener {
+      /*  binding.needAmbulanceHome.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
-        }
+        }*/
         binding.needBloodHome.setOnClickListener {
             val intent = Intent(this, NeedBloodActivity::class.java)
             startActivity(intent)
@@ -93,21 +105,21 @@ class HomeActivity : AppCompatActivity() {
             val intent = Intent(this, SigninActivity::class.java)
             startActivity(intent)
         }
-      /*  binding.createPostgrid.setOnClickListener {
-            startActivity(Intent(this, PostActivity::class.java))
-        }
-        binding.updatePostBelow.setOnClickListener {
-            startActivity(Intent(this, UpdatePostActivity::class.java))
-        }
-        binding.createProfileBelow.setOnClickListener {
-            val intent = Intent(this, GetSignUpActivity::class.java)
-            startActivity(intent)
-        }
-        binding.updateProfileBelow.setOnClickListener {
-            val intent = Intent(this, UpdateProfileActivityprevious::class.java)
-            startActivity(intent)
-        }*/
-        binding.needAmbulanceHome.setOnClickListener {
+        /*  binding.createPostgrid.setOnClickListener {
+              startActivity(Intent(this, PostActivity::class.java))
+          }
+          binding.updatePostBelow.setOnClickListener {
+              startActivity(Intent(this, UpdatePostActivity::class.java))
+          }
+          binding.createProfileBelow.setOnClickListener {
+              val intent = Intent(this, GetSignUpActivity::class.java)
+              startActivity(intent)
+          }
+          binding.updateProfileBelow.setOnClickListener {
+              val intent = Intent(this, UpdateProfileActivityprevious::class.java)
+              startActivity(intent)
+          }*/
+        /*binding.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND)
             intent.type = "type/palin"
             val shareBody = "You are body"
@@ -115,7 +127,7 @@ class HomeActivity : AppCompatActivity() {
             intent.putExtra(Intent.EXTRA_SUBJECT, shareBody)
             intent.putExtra(Intent.EXTRA_TEXT, shareSub)
             startActivity(Intent.createChooser(intent, "Share your App"))
-        }
+        }*/
 
 
     }

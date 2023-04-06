@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,44 +7,46 @@
     android:background="@drawable/asof"
     tools:context=".activities.PostActivity">
 
-    <Button
-        android:id="@+id/regButtonID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Post"
-        android:background="@drawable/custom_button"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@id/card"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
-        android:layout_width="match_parent"
-        android:layout_height="585dp"
-        app:cardCornerRadius="35dp"
-        android:elevation="50sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <Button
+            android:id="@+id/regButtonID"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="6dp"
-            android:orientation="vertical">
+            android:background="@drawable/custom_button"
+            android:text="Post"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/card" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="585dp"
+            android:elevation="50sp"
+            app:cardCornerRadius="35dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:orientation="vertical">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/nameProfileEt"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/profile"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
+                    android:drawableLeft="@drawable/profile"
                     android:gravity="clip_horizontal"
-                    android:hint=" Enter Your Name"
-                    />
+                    android:hint=" Enter Your Name" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/ageprofileET"
@@ -53,129 +55,129 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
-                    android:inputType="number"
                     android:drawableLeft="@drawable/ic_baseline_align_horizontal_left_24"
-                    android:hint=" Patient Age" />
+                    android:hint=" Patient Age"
+                    android:inputType="number" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/contactNumberET"
-                    android:drawableLeft="@drawable/ic_baseline_phone_24"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
+                    android:drawableLeft="@drawable/ic_baseline_phone_24"
                     android:hint=" Contact Number"
-                    android:inputType="phone"
-                    />
+                    android:inputType="phone" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/bloodGroupLayout"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bloodGroupLayout"
 
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/contactNumberLayout">
-
-                <!-- Inside text input layout add
-              an auto complete text view
-                and make its input type to none-->
-                <AutoCompleteTextView
-                    android:id="@+id/bloodGroupET"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Choose Your Blood Group:"
-                    android:inputType="textAutoComplete" />
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contactNumberLayout">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <!-- Inside text input layout add
+                  an auto complete text view
+                    and make its input type to none-->
+                    <AutoCompleteTextView
+                        android:id="@+id/bloodGroupET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Choose Your Blood Group:"
+                        android:inputType="textAutoComplete" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/availableLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bloodGroupLayout">
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Inside text input layout add
-              an auto complete text view
-                and make its input type to none-->
-                <AutoCompleteTextView
-                    android:id="@+id/BNET"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/availableLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Amount of Blood Bag you need..."
-                    android:inputType="textAutoComplete" />
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bloodGroupLayout">
 
-            </com.google.android.material.textfield.TextInputLayout>
+                    <!-- Inside text input layout add
+                  an auto complete text view
+                    and make its input type to none-->
+                    <AutoCompleteTextView
+                        android:id="@+id/BNET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Amount of Blood Bag you need..."
+                        android:inputType="textAutoComplete" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/cityLayout"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/availableLayout">
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <!-- Inside text input layout add
-              an auto complete text view
-                and make its input type to none-->
-                <AutoCompleteTextView
-                    android:id="@+id/patientDistrictET"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="District"
-                    android:inputType="textAutoComplete" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/bStatusLayout"
-
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintTop_toBottomOf="parent">
-
-                <!-- Inside text input layout add
-              an auto complete text view
-                and make its input type to none-->
-                <AutoCompleteTextView
-                    android:id="@+id/bloodManagedET"
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/cityLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/availableLayout">
 
-                    android:hint="Blood Managed or Not?"
-                    android:inputType="textAutoComplete" />
+                    <!-- Inside text input layout add
+                  an auto complete text view
+                    and make its input type to none-->
+                    <AutoCompleteTextView
+                        android:id="@+id/patientDistrictET"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="District"
+                        android:inputType="textAutoComplete" />
 
-            </com.google.android.material.textfield.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/bStatusLayout"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent">
+
+                    <!-- Inside text input layout add
+                  an auto complete text view
+                    and make its input type to none-->
+                    <AutoCompleteTextView
+                        android:id="@+id/bloodManagedET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="Blood Managed or Not?"
+                        android:inputType="textAutoComplete" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/patientHospitalET"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="30dp"
-                android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
-                android:gravity="clip_horizontal"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:drawableLeft="@drawable/ic_baseline_local_hospital_24"
+                    android:gravity="clip_horizontal"
                     android:hint=" Enter Hospital Name" />
 
 
@@ -186,10 +188,11 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="30dp"
-                    android:gravity="clip_horizontal"
                     android:drawableLeft="@drawable/ic_baseline_sick_24"
-                    android:hint=" Enter Patient Illness"/>
+                    android:gravity="clip_horizontal"
+                    android:hint=" Enter Patient Illness" />
 
-        </LinearLayout>
-    </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
