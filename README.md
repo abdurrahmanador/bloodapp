@@ -24,7 +24,7 @@ E-mail: abiabdullahinshaaloh@gmail.com
 Cell: +8801682474757
 
 --------------------------------------------------------------------
-![Screenshot_2023-03-05-11-17-18-837_com example blood](https://user-images.githubusercontent.com/121200627/222943145-b901d66a-db8d-4d1a-90a4-9ca4e39c09e2.jpg)
+<img src="https://user-images.githubusercontent.com/121200627/222943145-b901d66a-db8d-4d1a-90a4-9ca4e39c09e2.jpg" height=300 width=150>
 ![Screenshot_2023-03-05-11-17-21-085_com example blood](https://user-images.githubusercontent.com/121200627/222943148-1a68ea62-5dd0-405a-9ed7-5fcc5307b90c.jpg)
 ![Screenshot_2023-03-05-11-17-22-704_com example blood](https://user-images.githubusercontent.com/121200627/222943149-32895811-d87e-40a2-8bfd-6f4d36f38b98.jpg)
 ![Screenshot_2023-03-05-11-17-27-082_com example blood](https://user-images.githubusercontent.com/121200627/222943151-8fa1d57c-be5f-41d2-ad11-f7b2b98a2044.jpg)
