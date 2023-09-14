@@ -17,11 +17,6 @@ Version: 1.0.0
 
 Developer: Abdur Rahman
 
-Student of " Computer Science and Engineering " at "International Islamic University Chittagong".
-
-E-mail: abiabdullahinshaaloh@gmail.com
-
-Cell: +8801682474757
 
 --------------------------------------------------------------------
 <img src="https://user-images.githubusercontent.com/121200627/222943145-b901d66a-db8d-4d1a-90a4-9ca4e39c09e2.jpg" height=300 width=150>
